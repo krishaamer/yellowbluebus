@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.48",
-    "meteor-node-stubs": "^0.4.1"
+    "meteor-node-stubs": "^0.4.1",
+    "simpl-schema": "^1.5.0",
+    "video.js": "^7.0.3"
   },
   "meteor": {
     "mainModule": {
