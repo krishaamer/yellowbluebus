@@ -1,0 +1,31 @@
+{
+  "public": {
+    "ROOT_URL": "https://www.yellowbluebus.com/",
+    "SITE_NAME": "Yellow Blue Bus",
+    "SITE_DESC": "",
+    "DEFAULT_LOCALE": "en_US",
+    "TWITTER_HANDLE": "@",
+    "FB_APP_ID": "",
+    "FB_PIXEL": "",
+    "FLICKR_ID": "",
+    "GOOGLE_SITE_VERIFICATION": "",
+    "DEFAULT_SHARE_IMG": "",
+    "analyticsSettings": {
+      "Google Analytics" : {
+        "trackingId": ""
+      }
+    },
+    "MAPBOX_API_KEY" : "",
+    "GoogleMapKey" : "",
+    "CLOUDINARY_ROOT": "https://res.cloudinary.com/",
+    "CLOUDINARY_API_KEY": "748176824116936",
+    "CLOUDINARY_CLOUD_NAME": "yellow-blue-bus"
+  },
+  "galaxy.meteor.com": {
+    "env": {
+      "ROOT_URL": "https://www.yellowbluebus.com/",
+      "MONGO_URL": "mongodb://ybb-client:tm8LmU2kvJ3AdXRoqrpf7Rny@ds247027.mlab.com:47027/ybb"
+    }
+  },
+  "CLOUDINARY_API_SECRET": "uvSoIevmAgWlI6bD1fkqkJ-OQH0"
+}
