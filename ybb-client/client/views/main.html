@@ -1,0 +1,26 @@
+<head>
+  	<title>Yellow Blue Bus</title>
+  	<meta charset="utf-8" /> 
+  	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<body></body>
+
+<template name="layout">
+	{{> yield}}
+</template>
+
+<template name="main">
+	{{> Template.dynamic template=header}}
+	<main class="ybb main">
+		{{> Template.dynamic template=belowHeader}}
+		{{> Template.dynamic template=aboveContent}}
+		{{> Template.dynamic template=content}}
+		{{> Template.dynamic template=belowContent}}
+		{{> Template.dynamic template=aboveFooter}}
+	</main>
+	<footer class="ybb footer">
+		{{> Template.dynamic template=footer}}
+	</footer>
+</template>
