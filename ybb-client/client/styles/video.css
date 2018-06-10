@@ -21,7 +21,7 @@
 .ybb-info-overlay {
 
 	position: absolute;
-	bottom: 5rem;
+	top: 50vh;
 	z-index: 99999;
     width: 100%;
 }
