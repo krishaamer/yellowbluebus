@@ -10,6 +10,24 @@ Meteor.startup(() => {
   	Session.set('start-speaking', true);
 });
 
+keyboardJS.bind('l', function(e) {
+	
+    FlowRouter.go('landing');
+    jQuery('#video-player').remove();
+    if (!jQuery('#video-player')) {
+    	jQuery('.video-box').append('<video id="video-player" autoplay class="cld-video-player cld-fluid cld-video-player-skin-light"></video>');
+    }
+});
+
+keyboardJS.bind('k', function(e) {
+	
+    FlowRouter.go('welcome');
+    jQuery('#video-player').remove();
+	if (!jQuery('#video-player')) {
+    	jQuery('.video-box').append('<video id="video-player" autoplay class="cld-video-player cld-fluid cld-video-player-skin-light"></video>');
+    }
+});
+
 keyboardJS.bind('q', function(e) {
 	
     FlowRouter.go('speak');
@@ -18,8 +36,10 @@ keyboardJS.bind('q', function(e) {
 keyboardJS.bind('w', function(e) {
 
     FlowRouter.go('welcome');
-    jQuery('.cld-video-player').remove();
-	jQuery('.video-box').append('<video id="video-player" autoplay class="cld-video-player cld-fluid cld-video-player-skin-light"></video>');
+    jQuery('#video-player').remove();
+	if (!jQuery('#video-player')) {
+    	jQuery('.video-box').append('<video id="video-player" autoplay class="cld-video-player cld-fluid cld-video-player-skin-light"></video>');
+    }
 });
 
 keyboardJS.bind('1', function(e) {

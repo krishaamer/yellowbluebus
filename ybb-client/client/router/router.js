@@ -1,5 +1,8 @@
 import { FlowRouter } from 'meteor/ostrio:flow-router-extra';
 
+FlowRouter.triggers.enter([() => BodyClass.run()]);
+FlowRouter.triggers.exit([() => BodyClass.cleanup()]);
+
 FlowRouter.globals.push({
   meta: {
     charset: {
@@ -80,7 +83,7 @@ FlowRouter.route('/speak', {
   title: 'Yellow Blue Bus', 
   action () {
 
-    BodyClass.add('home');
+    BodyClass.add('speak');
     this.render('layout', 'main', {
       
       header: "header",
@@ -92,13 +95,18 @@ FlowRouter.route('/speak', {
   },
 });
 
-BodyClass.config({
-  element: 'body',
-  classes: [],
-});
+FlowRouter.route('/landing', {
+  name: 'landing', 
+  title: 'Yellow Blue Bus', 
+  action () {
 
-FlowRouter.triggers.enter([() => BodyClass.run()]);
-FlowRouter.triggers.exit([() => BodyClass.cleanup()]);
+    BodyClass.add('landing');
+    this.render('layout', 'landing_layout', {
+      content: "landing"
+    });
+
+  },
+});
 
 import { FlowRouterMeta, FlowRouterTitle } from 'meteor/ostrio:flow-router-meta';
 new FlowRouterMeta(FlowRouter);

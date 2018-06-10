@@ -1,0 +1,9 @@
+.landing-demo {
+	background: url(/landing.jpg) !important;
+	background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important; 
+    border: none !important;
+    height: 100% !important;
+}
