@@ -23,6 +23,7 @@
     "annyang": "^2.6.1",
     "cloudinary-core": "^2.5.0",
     "cloudinary-video-player": "^1.0.1",
+    "keyboardjs": "^2.4.1",
     "lodash": "^4.17.10",
     "meteor-node-stubs": "^0.4.1"
   }
