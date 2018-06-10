@@ -11,3 +11,21 @@ h1, h2, h3, h4, h5, h6 {
 	background: none !important;
 }
 
+h1 {
+	font-family: 'JeanLucWeb-Bold', sans-serif;
+	color: #fff !important;
+	font-size: 8rem;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga" on;
+}
+
+h2.start_speaking {
+	color: #fff !important;
+	font-size: 4rem;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga" on;
+}

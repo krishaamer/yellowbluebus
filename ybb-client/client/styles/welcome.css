@@ -6,15 +6,5 @@ body.home .video-container {
     background-position: center !important; 
     border: none !important;
     border-radius: 10px;
-    min-height: 70vh !important;
-}
-
-h1 {
-	font-family: 'JeanLucWeb-Bold', sans-serif;
-	color: #fff !important;
-	font-size: 8rem;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-moz-font-feature-settings: "liga" on;
+    min-height: 60vh !important;
 }

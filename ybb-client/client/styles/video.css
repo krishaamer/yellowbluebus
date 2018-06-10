@@ -3,7 +3,7 @@
 }
 
 .video-box {
-	min-height: 70vh;
+	min-height: 60vh;
 }
 
 .video-container {
@@ -13,9 +13,15 @@
 .ybb-video-overlay {
 
 	position: absolute;
-	top: 5rem;
+	top: 2rem;
 	z-index: 99999;
-	bottom: 1rem;
-    z-index: 99999;
+    width: 100%;
+}
+
+.ybb-info-overlay {
+
+	position: absolute;
+	bottom: 5rem;
+	z-index: 99999;
     width: 100%;
 }

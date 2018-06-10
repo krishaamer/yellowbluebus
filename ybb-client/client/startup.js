@@ -5,4 +5,5 @@ Meteor.startup(() => {
 	voice();
 
   	Session.set('current-keyword', ['hello']);
+  	Session.set('start-speaking', true);
 });

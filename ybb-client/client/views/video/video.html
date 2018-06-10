@@ -1,4 +1,5 @@
 <template name="video">
+	{{> start_speaking}}
 	<video id="video-player" autoplay class="cld-video-player cld-fluid cld-video-player-skin-light"></video>
 	{{#if Template.subscriptionsReady}}
 		{{#with films}}

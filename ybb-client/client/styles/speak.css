@@ -1,0 +1,6 @@
+.start-speaking-overlay {
+
+	position: absolute;
+	top: 12rem;
+	z-index: 9999;
+}
