@@ -1,3 +1,26 @@
 Meteor.startup(() => {
-  // code to run on server at startup
-});
+	BrowserPolicy.content.allowOriginForAll('localhost');
+	BrowserPolicy.content.allowOriginForAll('localhost:*');
+  	BrowserPolicy.content.allowOriginForAll('*.vimeo.com');
+	BrowserPolicy.content.allowOriginForAll('*.youtube.com');
+	BrowserPolicy.content.allowOriginForAll('*.instagram.com');
+	BrowserPolicy.content.allowOriginForAll('*.cloudinary.com');
+	BrowserPolicy.content.allowOriginForAll('res.cloudinary.com');
+	BrowserPolicy.content.allowImageOrigin('res.cloudinary.com');
+	BrowserPolicy.content.allowOriginForAll('s3.amazonaws.com');
+	BrowserPolicy.content.allowOriginForAll('*.flickr.com');
+	BrowserPolicy.content.allowOriginForAll('*.staticflickr.com');
+	BrowserPolicy.content.allowOriginForAll('*.googleapis.com');
+	BrowserPolicy.content.allowOriginForAll('*.gstatic.com');
+	BrowserPolicy.content.allowOriginForAll('*.google-analytics.com');
+	BrowserPolicy.content.allowOriginForAll('*.facebook.net');
+	BrowserPolicy.content.allowOriginForAll('*.facebook.com');
+	BrowserPolicy.content.allowOriginForAll('*.mapbox.com');
+	BrowserPolicy.content.allowOriginForAll('blob:');
+	BrowserPolicy.content.allowOriginForAll('img:');
+	BrowserPolicy.content.allowOriginForAll('img-src:');
+	BrowserPolicy.content.allowSameOriginForAll();
+	BrowserPolicy.content.allowDataUrlForAll();
+	BrowserPolicy.content.allowInlineScripts();
+	BrowserPolicy.content.allowInlineStyles();
+})
