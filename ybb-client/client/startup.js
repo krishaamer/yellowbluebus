@@ -1,3 +1,4 @@
+import { FlowRouter } from 'meteor/ostrio:flow-router-extra';
 import {voice} from '/client/voice.js';
 import keyboardJS from 'keyboardjs';
 
