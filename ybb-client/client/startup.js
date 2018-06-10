@@ -9,6 +9,10 @@ Meteor.startup(() => {
   	Session.set('start-speaking', true);
 });
 
+keyboardJS.bind('q', function(e) {
+	
+    FlowRouter.go('speak');
+});
 
 keyboardJS.bind('1', function(e) {
   	Session.set('current-phrase', 'Hi, chilling out with my friends. I miss you!');
