@@ -12,15 +12,21 @@
 </template>
 
 <template name="main">
+
 	{{> Template.dynamic template=header}}
 	<main class="ybb main">
-		{{> Template.dynamic template=belowHeader}}
-		{{> Template.dynamic template=aboveContent}}
-		{{> Template.dynamic template=content}}
-		{{> Template.dynamic template=belowContent}}
-		{{> Template.dynamic template=aboveFooter}}
+		<div class="ui container video-container">
+			{{> Template.dynamic template=belowHeader}}
+			{{> Template.dynamic template=aboveContent}}
+			<div class="ui segment video-box">
+				{{> Template.dynamic template=content}}
+			</div>
+			{{> Template.dynamic template=belowContent}}
+			{{> Template.dynamic template=aboveFooter}}
+		</div>
 	</main>
 	<footer class="ybb footer">
 		{{> Template.dynamic template=footer}}
 	</footer>
+
 </template>

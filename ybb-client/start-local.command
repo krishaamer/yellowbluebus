@@ -21,7 +21,7 @@ fi
 echo "DIR is '$DIR'"
 cd $DIR
 
-echo “Running YBB client on port 3000.”
+echo “Running YBB Admin on port 4000”
 
 # Your command is next.
 meteor --settings settings-development.json --port 3000

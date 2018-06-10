@@ -2,14 +2,12 @@ body {
 
 }
 
-.video-player {
-	
+h1, h2, h3, h4, h5, h6 {
+	color: #fff;
 }
 
-.video-box {
-	min-height: 500px;
+.ui.segment {
+	border: none !important;
+	background: none !important;
 }
 
-.video-container {
-	margin-top: 6rem;
-}

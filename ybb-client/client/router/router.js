@@ -60,34 +60,45 @@ FlowRouter.globals.push({
 });
 
 FlowRouter.route('/', {
-  name: 'home', 
-  title: 'Home', 
+  name: 'welcome', 
+  title: 'Yellow Blue Bus', 
   action () {
     
+    BodyClass.add('home');
+    this.render('layout', 'main', {
+      
+      header: "header",
+      content: "welcome",
+      footer: "footer",
+    });
+
+  },
+});
+
+FlowRouter.route('/speak', {
+  name: 'speak', 
+  title: 'Yellow Blue Bus', 
+  action () {
+
+    BodyClass.add('home');
     this.render('layout', 'main', {
       
       header: "header",
       content: "video",
+      belowContent: "navigation",
       footer: "footer",
     });
 
   },
 });
 
-FlowRouter.route('/calibrate', {
-  name: 'calibrate', 
-  title: 'Calibrate', 
-  action () {
-    
-    this.render('layout', 'main', {
-      
-      header: "header",
-      content: "calibrate",
-      footer: "footer",
-    });
-
-  },
+BodyClass.config({
+  element: 'body',
+  classes: [],
 });
+
+FlowRouter.triggers.enter([() => BodyClass.run()]);
+FlowRouter.triggers.exit([() => BodyClass.cleanup()]);
 
 import { FlowRouterMeta, FlowRouterTitle } from 'meteor/ostrio:flow-router-meta';
 new FlowRouterMeta(FlowRouter);

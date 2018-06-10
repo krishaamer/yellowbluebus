@@ -20,22 +20,10 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0-beta.49",
-    "@google-cloud/speech": "^1.5.0",
     "annyang": "^2.6.1",
-    "cloudinary": "^1.11.0",
     "cloudinary-core": "^2.5.0",
     "cloudinary-video-player": "^1.0.1",
     "lodash": "^4.17.10",
-    "meteor-node-stubs": "^0.4.1",
-    "node-record-lpcm16": "^0.3.0",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "simpl-schema": "^1.5.0",
-    "twilio-video": "^1.10.0",
-    "video-stitch": "^1.5.0",
-    "video.js": "^7.0.4",
-    "videojs-gifplayer": "^0.1.1",
-    "videojs-record": "^2.3.1",
-    "videojs-youtube": "^2.5.0"
+    "meteor-node-stubs": "^0.4.1"
   }
 }

@@ -1,0 +1,21 @@
+.video-player {
+	
+}
+
+.video-box {
+	min-height: 70vh;
+}
+
+.video-container {
+	/*margin-top: 3rem; */
+}
+
+.ybb-video-overlay {
+
+	position: absolute;
+	top: 5rem;
+	z-index: 99999;
+	bottom: 1rem;
+    z-index: 99999;
+    width: 100%;
+}

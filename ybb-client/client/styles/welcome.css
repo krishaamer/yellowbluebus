@@ -1,0 +1,20 @@
+body.home .video-container {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/bus.jpg) !important;
+	background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important; 
+    border: none !important;
+    border-radius: 10px;
+    min-height: 70vh !important;
+}
+
+h1 {
+	font-family: 'JeanLucWeb-Bold', sans-serif;
+	color: #fff !important;
+	font-size: 8rem;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-font-feature-settings: "liga" on;
+}

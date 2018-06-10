@@ -1,6 +1,8 @@
+import {voice} from '/client/voice.js';
+
 Meteor.startup(() => {
 
-  	Session.set('current-keyword', ['plap']);
+	voice();
+
+  	Session.set('current-keyword', ['hello']);
 });
-
-

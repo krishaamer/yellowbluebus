@@ -1,0 +1,8 @@
+<template name="video">
+	<video id="video-player" autoplay class="cld-video-player cld-fluid cld-video-player-skin-light"></video>
+	{{#if Template.subscriptionsReady}}
+		{{#with films}}
+			{{> video_item films=films mp=mp}}
+		{{/with}}
+	{{/if}}
+</template>

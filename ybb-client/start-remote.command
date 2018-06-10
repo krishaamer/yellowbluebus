@@ -24,6 +24,6 @@ cd $DIR
 echo “Running YBB client on port 3000.”
 
 # Your command is next.
-MONGO_URL='mongodb://ybb-client:tm8LmU2kvJ3AdXRoqrpf7Rny@ds247027.mlab.com:47027/ybb' meteor --settings settings-development.json --port 3000
+MONGO_URL='mongodb+srv://ybb-client:GMap6bOaynLvNye9@ybb-6qnr0.mongodb.net/ybb' meteor --settings settings-development.json --port 3000
 
 echo "Done!"
