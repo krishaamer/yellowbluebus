@@ -1,1 +1,1 @@
-DEPLOY_HOSTNAME=eu-west-1.galaxy-deploy.meteor.com meteor deploy --settings settings-development.json ybb.haam.co
+DEPLOY_HOSTNAME=eu-west-1.galaxy-deploy.meteor.com meteor deploy --settings settings-staging.json ybb.haam.co
